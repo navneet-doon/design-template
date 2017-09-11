@@ -1,0 +1,38 @@
+﻿
+<script>
+    ////********* Url Generation******************************************/
+    $_BaseURL = "@Url.Content("~/")";
+    $_Logout = "@Url.Action("Logout", "Account")";
+    $_AjaxLoader = "@Url.Content("~/Scripts/ajax/UpdateProgress.gif")";
+    @*$_SaveRolePermission = "@Url.Action("SaveRolePermission", "Account")";*@
+
+
+    @*$_GetRevnue = "@Url.Action("GetRevnue", "AdminDashboard")";
+    $_GetAllChurches = "@Url.Action("GetAllChurches", "AdminDashboard")";*@
+    $_GetOrganizationList = "@Url.Action("GetOrganizationList", "Organizations")";
+    $_CheckUniqueName = "@Url.Action("CheckUniqueName", "Organizations")";
+    $_SaveLogo = "@Url.Action("SaveLogo", "Organizations")";
+    $_SaveWallpaper = "@Url.Action("SaveWallpaper", "Organizations")";
+
+    //************************************* EventCalendarController **************************************
+    $_GetOrganizationEvents = "@Url.Action("GetAllEvents","EventCalendar")";
+    $_AddEvent = "@Url.Action("AddEvent", "EventCalendar")";
+    $_UpdateEvent = "@Url.Action("UpdateEvent", "EventCalendar")";
+    $_DeleteEvent = "@Url.Action("DeleteEvent", "EventCalendar")";
+    $_SaveEventBanner = "@Url.Action("SaveEventBanner", "EventCalendar")";
+    $_GetKioskEvents = "@Url.Action("GetEventsForKiosk", "EventCalendar")";
+    $_EventDetail = "@Url.Action("EventDetail", "EventCalendar")";
+
+    //************************************* Feature and Permission Management **************************************
+    $_GetFeatureList = "@Url.Action("GetFeatureList", "AccessManagement")";
+    $_SaveRolePermissionBackOffice = "@Url.Action("SaveRolePermission", "AccessManagement")";
+    $_GetBackOfficePermissions = "@Url.Action("GetBackOfficePermissions", "AccessManagement")";
+
+    //************************************* Back Office User Profile Management**************************************
+    $_GetBackOfficeUserInfo = "@Url.Action("GetBackOfficeUserInfo", "BackOfficeUserProfile")";
+    $_GetBackOfficeRoleList = "@Url.Action("GetBackOfficeRoleList", "BackOfficeRoles")";
+
+
+    $_AddBackOfficeRole = "@Url.Action("AddRole", "BackOfficeRoles")";
+
+</script>

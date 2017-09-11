@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    @* --------------------- Style Sheets --------------------- *@
+    <link href="@Url.Content("~/Content/metro.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/metro-icons.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/metro-responsive.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/metro-schemes.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/KioskCommon.css")" rel="stylesheet" />
+    @* --------------------- Scripts --------------------- *@
+    <script src="@Url.Content("~/Scripts/jquery-3.1.1.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/metro.min.js")"></script>
+    <script src="@Url.Content("~/Scripts/jquery.unobtrusive-ajax.js")"></script>
+    <script src="@Url.Content("~/Scripts/Custom/CommonFunctions.js")"></script>
+    @*<script src="@Url.Content("~/Scripts/Custom/LayoutAdmin.js")"></script>*@
+    <script src="@Url.Content("~/Scripts/Custom/InputValidation.js")"></script>
+    @Html.Partial("~/Views/Shared/UrlVariables.cshtml")
+</head>
+<body>
+    <div class="container">
+        <header class="margin20 no-margin-left no-margin-right">
+            <div class="clear-float">
+                <div class="place-right">
+                    @*<form>
+                            <div class="input-control text margin20" style="width: 300px">
+                                <input type="text" name="q" placeholder="Search...">
+                                <button class="button"><span class="mif-search"></span></button>
+                            </div>
+                        </form>*@
+                    <ul class="horizontal-menu">
+                        <li class="place-right">
+                            <a href="#" class="dropdown-toggle">
+                                <span class="icon mif-user"></span>
+                            </a>
+                            <ul class="d-menu place-right" data-role="dropdown">
+                                <li><a href="#"><span class="icon mif-user"></span>Profile</a></li>
+                                <li><a href="#"><span class="icon mif-settings-power"></span>Logout</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Welcome: User</a></li>
+                    </ul>
+                </div>
+                <a class="place-left" href="@Url.Action("Index", "KioskHome")" title="Home">
+                    <h1>Church Kiosk</h1>
+                </a>
+            </div>
+            @*<div class="main-menu-wrapper">
+                    <ul class="horizontal-menu" style="margin-left: -20px">
+                        <li><a href="#">news</a></li>
+                        <li><a href="#">sports</a></li>
+                        <li><a href="#">entertainment</a></li>
+                        <li><a href="#">money</a></li>
+                        <li><a href="#">autos</a></li>
+                        <li><a href="#">health</a></li>
+                        <li class="place-right">
+                            <a href="#" class="dropdown-toggle">options</a>
+                            <ul class="d-menu place-right" data-role="dropdown">
+                                <li><a href="#">Go to Classic MSN</a></li>
+                                <li><a href="#">MSN Worldwide</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>*@
+        </header>
+        <div>
+            @RenderBody()
+        </div>
+        <footer>
+            <div class="bottom-menu-wrapper">
+                <ul class="horizontal-menu compact">
+                    <li><a>&copy; 2017 Church Kiosk</a></li>
+                    <li class="place-right"><a href="#">Privacy</a></li>
+                    <li class="place-right"><a href="#">Legal</a></li>
+                    <li class="place-right"><a href="#">Help</a></li>
+                    <li class="place-right"><a href="#">Feedback</a></li>
+                </ul>
+            </div>
+        </footer>
+        <div id="loader-Container">
+            <img class="loader" src="~/Images/loading.gif" alt="loading.." />
+        </div>
+    </div>
+</body>
+</html>

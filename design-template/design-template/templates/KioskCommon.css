@@ -1,0 +1,65 @@
+﻿
+/********************* Common Style for Kiosk section **************************/
+
+.tile-large-slider {
+        width: 56% !important;
+    }
+
+    .tile-kiok-home {
+        width: 20% !important;
+    }
+
+    .tile-wide-home-x {
+        width: 265px;
+    }
+
+    .tile-wide-home-y {
+        height: 240px;
+    }
+
+    .tile-group {
+        width: 100% !important;
+    }
+
+.no-events {
+    max-width: 100% !important;
+}
+
+.kiosk-input-container {
+    min-height: 600px !important;
+}
+
+.kiosk-event-grid .image-container {
+    cursor: pointer !important;
+}
+
+/********************************** Event detail page **********************************/
+.event-image-cell {
+    width: 33% !important;
+}
+.event-detail-cell {
+    width: 60% !important;
+}
+.event-detail-image {
+    width: 100% !important;
+    max-height: 300px !important;
+    margin-top: 1em !important;
+}
+
+/********************************** Code for Loader section **********************************/
+.loader {
+    position: fixed;
+    top: 40%;
+    left: 49%;
+}
+#loader-Container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 1001;
+}
